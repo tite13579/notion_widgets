@@ -9,8 +9,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Socials</title>
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <style>
@@ -22,82 +20,72 @@
 
     body {
       display: grid;
+      font-family: "Poppins", sans-serif;
       place-items: center;
     }
 
     .wrapper {
       padding-top: 10px;
       display: inline-flex;
-      
-    }
 
-    .social {
-      background-color: #Ffffff;
-      opacity: 100;
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
     }
 
     .icon {
-      font-size: 1.2em;
+      /* Change the icon size here */
+      font-size: 2em;
+      /* Change the icons colours here*/
+      color: #7a7a7a
     }
 
+
     .blog:hover {
-      background-color: #ffbd2f;
+      color: #ffbd2f;
     }
 
     .email:hover {
-      background-color: #23c8c8;
+      color: #23c8c8;
     }
 
     .facebook:hover {
-      background-color: #4267B2;
+      color: #4267B2;
     }
 
     .instagram:hover {
-      background: rgb(241, 102, 217);
-      background: radial-gradient(circle, rgba(241, 102, 217, 1) 10%, rgba(252, 176, 69, 1) 76%, rgba(253, 29, 29, 1) 100%);
+      color: rgb(241, 102, 217);
     }
 
     .linkedin:hover {
-      background-color: #0e76a8;
+      color: #0e76a8;
     }
 
     .twitter:hover {
-      background-color: #26a7de;
+      color: #26a7de;
     }
 
     .reddit:hover {
-      background-color: #ff4500;
+      color: #ff4500;
     }
 
     .tiktok:hover {
-      background-color: #ff0050;
+      color: #ff0050;
     }
 
     .youtube:hover {
-      background-color: #FF0000;
+      color: #FF0000;
     }
 
     .pinterest:hover {
-      background-color: #c8232c;
+      color: #c8232c;
     }
 
     .telegram:hover {
-      background-color: #2AABEE;
+      color: #2AABEE;
     }
 
     .social {
       position: relative;
       margin: 10px;
       cursor: pointer;
-    }
-
-    .social:hover {
-      color: #fff;
     }
   </style>
 
@@ -110,20 +98,20 @@
     <div class="wrapper">
 
       <!-- Start email Icon -->
-      <div id="email" onclick="navigate(this.id)" class="social email">
+      <div id="email" onclick="navigate(this.id)" class="social">
         <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
       </div>
       <!-- End email Icon -->
 
       <!-- Start instagram Icon -->
-      <div id="instagram" onclick="navigate(this.id)" class="social instagram">
-        <span class="icon"><i class="fab fa-instagram"></i></span>
+      <div id="instagram" onclick="navigate(this.id)" class="social">
+        <span class="icon instagram"><i class="fab fa-instagram"></i></span>
       </div>
       <!-- End instagram Icon -->
 
       <!-- Start linkedin Icon -->
-      <div id="linkedin" onclick="navigate(this.id)" class="social linkedin">
-        <span class="icon"><i class="fab fa-linkedin"></i></span>
+      <div id="linkedin" onclick="navigate(this.id)" class="social">
+        <span class="icon linkedin"><i class="fab fa-linkedin"></i></span>
       </div>
       <!-- End linkedin Icon -->
 
