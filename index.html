@@ -89,6 +89,10 @@
       background-color: #2AABEE;
     }
 
+     .whatsapp:hover {
+      background-color: ##25D366;
+    }
+
     .social {
       position: relative;
       margin: 10px;
@@ -131,6 +135,12 @@
         <span class="icon"><i class="fab fa-linkedin"></i></span>
       </div>
       <!-- End linkedin Icon -->
+
+      <!-- Start whatsapp Icon -->
+      <div id="whatsapp" onclick="navigate(this.id)" class="social whatsapp">
+        <span class="icon"><i class="fab fa-whatsapp"></i></span>
+      </div>
+      <!-- End whatsapp   Icon -->
 
     </div>
 
@@ -175,6 +185,9 @@
         }
         else if (id === "telegram") {
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
+        }
+         else if (id === "whatsapp") {
+          window.open("https://wa.link/4dkb5j", '_blank').focus(); 
         }
       }
 
