@@ -13,7 +13,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-    <style>
+  <style>
     * {
       margin: 0;
       padding: 0;
@@ -31,92 +31,61 @@
 
     }
 
-    .fill {
-      width: 50px;
-      height: 50px;
-      padding: 2%;
-      color: #fff;
-      outline: 0;
-      border: 2px solid black;
-      cursor: pointer;
-      position: relative;
-      background-color: rgba(0, 0, 0, 0);
-      margin: 5px;
+    .social {
+      background-color: #eae9e9;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
     }
-
-    .fill::after {
-      content: "";
-      width: 100%;
-      z-index: -1;
-      position: absolute;
-      height: 100%;
-      top: 5px;
-      left: 5px;
-      transition: 0.2s;
-    }
-
-    .fill:hover::after {
-      top: 0px;
-      left: 0px;
-    }
-
 
     .icon {
-      font-size: 1em;
+      font-size: 1.2em;
     }
 
-    .blog:hover,
-    .blog::after {
+    .blog:hover {
       background-color: #ffbd2f;
     }
 
-    .email:hover,
-    .email::after {
+    .email:hover {
       background-color: #23c8c8;
     }
 
-    .facebook:hover,
-    .facebook::after {
+    .facebook:hover {
       background-color: #4267B2;
     }
 
-    .instagram:hover,
-    .instagram::after {
-      background: #f86ee1;
+    .instagram:hover {
+      background: rgb(241, 102, 217);
+      background: radial-gradient(circle, rgba(241, 102, 217, 1) 10%, rgba(252, 176, 69, 1) 76%, rgba(253, 29, 29, 1) 100%);
     }
 
-    .linkedin:hover,
-    .linkedin::after {
+    .linkedin:hover {
       background-color: #0e76a8;
     }
 
-    .twitter:hover,
-    .twitter::after {
+    .twitter:hover {
       background-color: #26a7de;
     }
 
-    .reddit:hover,
-    .reddit::after {
+    .reddit:hover {
       background-color: #ff4500;
     }
 
-    .tiktok:hover,
-    .tiktok::after {
+    .tiktok:hover {
       background-color: #ff0050;
     }
 
-    .youtube:hover,
-    .youtube::after {
+    .youtube:hover {
       background-color: #FF0000;
     }
 
-    .pinterest:hover,
-    .pinterest::after {
+    .pinterest:hover {
       background-color: #c8232c;
     }
 
-    .telegram:hover,
-    .telegram::after {
+    .telegram:hover {
       background-color: #2AABEE;
     }
 
@@ -151,6 +120,7 @@
       </div>
       <!-- End facebook Icon -->
 
+
       <!-- Start instagram Icon -->
       <div id="instagram" onclick="navigate(this.id)" class="social instagram">
         <span class="icon"><i class="fab fa-instagram"></i></span>
@@ -162,7 +132,6 @@
         <span class="icon"><i class="fab fa-linkedin"></i></span>
       </div>
       <!-- End linkedin Icon -->
-
 
     </div>
 
@@ -188,7 +157,7 @@
           window.open("https://www.instagram.com/ale.90900/", '_blank').focus(); //Add the url to your instagram account
         }
         else if (id === "linkedin") {
-          window.open("http://linkedin.com/in/itzel-peña-08b1ba72", '_blank').focus(); //Add the url to your pinterest account
+          window.open("https://www.linkedin.com/in/itzel-pe%C3%B1a-08b1ba72/", '_blank').focus(); //Add the url to your pinterest account
         }
         else if (id === "twitter") {
           window.open("https://twitter.com/", '_blank').focus(); //Add the url to your pinterest account
